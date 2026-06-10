@@ -83,7 +83,7 @@ export default function HomePage() {
         <section className="page-content page-grid reveal-panel-content" style={{ gap: 32 }}>
           <div className="reveal-panel-intro">
             <p className="kicker">RÉALISATIONS</p>
-            <h2 className="hero-title reveal-title">Des images pour ressentir<br />la qualité avant même de <em>lire.</em></h2>
+            <h2 className="hero-title reveal-title">Et si le prochain projet<br />était le vôtre&nbsp;?</h2>
             <div className="hero-line" />
           </div>
 
