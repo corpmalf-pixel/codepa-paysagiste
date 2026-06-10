@@ -1,12 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import NavHeader from '../components/NavHeader'
 
-const services = [
-  'Aménagement extérieur',
-  'Entretien de jardin',
-  'Taille et élagage',
-]
-
 export default function HomePage() {
   return (
     <main className="page-shell home-page-shell">
@@ -31,23 +25,6 @@ export default function HomePage() {
           </div>
         </div>
 
-        <section className="page-grid home-split-section">
-          <article className="glass-card padded">
-            <p className="section-label">L’ESSENTIEL</p>
-            <h2 className="section-title">Un paysagiste qui mise sur la qualité visuelle et la facilité de contact.</h2>
-            <p className="muted section-copy">
-              Ici, pas de surcharge. Le site doit transmettre une impression de soin,
-              de confiance et de fluidité, avec juste ce qu’il faut pour donner envie de prendre contact.
-            </p>
-            <div className="page-grid" style={{ gap: 12, marginTop: 18 }}>
-              {services.map((item) => (
-                <div className="feature-strip" key={item}>
-                  <strong>{item}</strong>
-                </div>
-              ))}
-            </div>
-          </article>
-        </section>
       </section>
     </main>
   )
