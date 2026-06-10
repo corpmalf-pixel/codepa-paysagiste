@@ -194,8 +194,8 @@ img, svg, canvas { max-width: 100%; display: block; }
 
 .home-page-overlay {
   background:
-    radial-gradient(circle at 78% 22%, rgba(255, 219, 120, 0.16), transparent 16%),
-    linear-gradient(180deg, rgba(3, 8, 5, 0.08) 0%, rgba(3, 8, 5, 0.22) 100%);
+    radial-gradient(circle at 78% 22%, rgba(255, 219, 120, 0.128), transparent 16%),
+    linear-gradient(180deg, rgba(3, 8, 5, 0.064) 0%, rgba(3, 8, 5, 0.176) 100%);
 }
 
 .contact-page-bg {
