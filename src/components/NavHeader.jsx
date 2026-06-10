@@ -3,17 +3,16 @@ import logoAubert from '../assets/logo-aubert.svg'
 
 const items = [
   ['Accueil', '/accueil'],
-  ['Services', '/services'],
-  ['Nos réalisations', '/nos-realisations'],
+  ['Réalisations', '/nos-realisations'],
   ['Contact', '/contact'],
 ]
 
-export default function NavHeader({ className = '', ctaLabel = 'Demander un devis', ctaTo = '/reservation', showLogo = true }) {
+export default function NavHeader({ className = '', ctaLabel = 'Prendre rendez-vous', ctaTo = '/contact', showLogo = true }) {
   return (
     <header className={className}>
       {showLogo ? (
         <div className="logo-block">
-          <img src={logoAubert} alt="Aubert Espace Vert" className="site-logo" />
+          <img src={logoAubert} alt="Codepa Paysagiste" className="site-logo" />
         </div>
       ) : <div />}
 

@@ -2,24 +2,34 @@ import NavHeader from '../components/NavHeader'
 
 const projects = [
   {
-    title: 'Abattage et mise en sécurité',
-    image: '/arbre couper.png',
-    text: 'Intervention propre pour sécuriser l’espace et retirer un arbre devenu gênant ou fragile.',
-  },
-  {
-    title: 'Taille nette et structurée',
-    image: '/coupe.png',
-    text: 'Remise en forme d’arbustes et végétaux pour retrouver une lecture plus propre du jardin.',
-  },
-  {
-    title: 'Entretien soigné des extérieurs',
-    image: '/ChatGPT Image 1 juin 2026, 21_38_05.png',
-    text: 'Nettoyage, coupe et finitions pour redonner de la tenue à l’ensemble du terrain.',
-  },
-  {
-    title: 'Mise en valeur du jardin',
+    title: 'Jardins soignés',
     image: '/ChatGPT Image 1 juin 2026, 21_41_55.png',
-    text: 'Nouvelle photo ajoutée à la galerie pour enrichir la présentation des réalisations.',
+    text: 'Des extérieurs propres, équilibrés et visuellement apaisants.',
+  },
+  {
+    title: 'Taille et structure',
+    image: '/coupe.png',
+    text: 'Des lignes nettes pour redonner de la tenue et de l’élégance au jardin.',
+  },
+  {
+    title: 'Entretien régulier',
+    image: '/ChatGPT Image 1 juin 2026, 21_38_05.png',
+    text: 'Un suivi simple et sérieux pour garder un extérieur toujours présentable.',
+  },
+  {
+    title: 'Interventions maîtrisées',
+    image: '/arbre couper.png',
+    text: 'Des travaux réalisés avec soin pour sécuriser et remettre en valeur les espaces.',
+  },
+  {
+    title: 'Ambiance naturelle',
+    image: '/entretien jardin.png',
+    text: 'Une approche visuelle qui met l’émotion et la propreté au premier plan.',
+  },
+  {
+    title: 'Finitions propres',
+    image: '/taille de haies.png',
+    text: 'Le détail compte : un rendu net, lisible et rassurant.',
   },
 ]
 
@@ -28,16 +38,15 @@ export default function WorksPage() {
     <main className="page-shell">
       <div className="page-bg" />
       <div className="page-overlay" />
-      <NavHeader className="page-header" />
+      <NavHeader className="page-header" ctaLabel="Prendre rendez-vous" ctaTo="/contact" />
 
       <section className="page-content page-grid" style={{ gap: 32 }}>
         <div>
-          <p className="kicker">NOS RÉALISATIONS</p>
-          <h1 className="hero-title">Quelques exemples<br />de travaux <em>réalisés.</em></h1>
+          <p className="kicker">RÉALISATIONS</p>
+          <h1 className="hero-title">Des images pour ressentir<br />la qualité avant même de <em>lire.</em></h1>
           <div className="hero-line" />
           <p className="hero-copy">
-            Une première sélection visuelle pour montrer le type d’interventions réalisées.
-            Cette section pourra ensuite être enrichie avec davantage de photos terrain.
+            Cette page doit surtout faire passer une impression : soin, goût du détail, propreté et confiance.
           </p>
         </div>
 

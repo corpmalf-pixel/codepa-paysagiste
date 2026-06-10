@@ -2,16 +2,14 @@ import NavHeader from '../components/NavHeader'
 
 const infos = [
   ['Téléphone', '06 26 67 72 70'],
-  ['Email', 'aubertteddy613@gmail.com'],
-  ['Adresse', '12 Rue de la Bastide, 95800 Cergy'],
-  ['Facebook', 'facebook.com/aubertespacevert'],
+  ['Email', 'contact@codepa-paysagiste.fr'],
+  ['Zone d’intervention', 'À préciser'],
 ]
 
 const proofs = [
-  'Devis et déplacement gratuits',
-  'Réponse rapide',
-  'Travail soigné',
-  'Service toute l’année',
+  'Prise de rendez-vous rapide',
+  'Réponse simple',
+  'Contact direct',
 ]
 
 export default function ContactPage() {
@@ -19,16 +17,15 @@ export default function ContactPage() {
     <main className="page-shell">
       <div className="page-bg" />
       <div className="page-overlay" />
-      <NavHeader className="page-header" />
+      <NavHeader className="page-header" ctaLabel="Prendre rendez-vous" ctaTo="/contact" />
 
       <section className="page-content page-grid two-col">
         <div>
           <p className="kicker">CONTACT</p>
-          <h1 className="hero-title">Un besoin ?<br />On vous répond de façon <em>simple.</em></h1>
+          <h1 className="hero-title">Prendre contact<br />doit être simple et <em>immédiat.</em></h1>
           <div className="hero-line" />
           <p className="hero-copy">
-            Pour une demande de devis, une question ou une prise de rendez-vous,
-            vous pouvez nous joindre directement par téléphone, email ou via Facebook.
+            Un appel, un message, un rendez-vous. Le site doit retirer les obstacles et faciliter le premier échange.
           </p>
           <div className="list-rows" style={{ marginTop: 28 }}>
             {infos.map(([label, value]) => (
@@ -41,26 +38,22 @@ export default function ContactPage() {
               </div>
             ))}
           </div>
+
+          <div className="home-final-cta-actions" style={{ marginTop: 28 }}>
+            <a className="primary-btn" href="tel:0626677270">Appeler maintenant <span>→</span></a>
+            <a className="secondary-btn" href="mailto:contact@codepa-paysagiste.fr">Envoyer un email</a>
+          </div>
         </div>
 
         <div className="page-grid">
           <div className="glass-card padded">
-            <div className="map-box map-embed-shell">
-              <iframe
-                title="Aubert Espace Vert - Google Maps"
-                src="https://www.google.com/maps?q=12%20Rue%20de%20la%20Bastide%2C%2095800%20Cergy&output=embed"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="map-embed"
-              />
+            <div className="proof-grid proof-grid-compact">
+              {proofs.map((item) => (
+                <article className="proof-item proof-item-compact" key={item}>
+                  <strong>{item}</strong>
+                </article>
+              ))}
             </div>
-          </div>
-          <div className="proof-grid proof-grid-compact">
-            {proofs.map((item) => (
-              <article className="proof-item proof-item-compact" key={item}>
-                <strong>{item}</strong>
-              </article>
-            ))}
           </div>
         </div>
       </section>

@@ -1,18 +1,22 @@
 import { NavLink } from 'react-router-dom'
 import NavHeader from '../components/NavHeader'
 
-const proofItems = [
-  ['4,9/5 sur 210 avis', 'Une réputation solide et régulière'],
-  ['Devis & déplacement gratuits', 'Aucun frais pour démarrer'],
-  ['Paiement en plusieurs fois', 'Une solution plus souple'],
-  ['Assurance professionnelle', 'Interventions couvertes et rassurantes'],
+const promises = [
+  'Réponse rapide',
+  'Rendez-vous simple à planifier',
+  'Interventions soignées',
 ]
 
-const serviceHighlights = [
-  'Entretien régulier de jardins',
-  'Taille de haies et arbustes',
-  'Élagage et coupe d’arbres',
-  'Tonte, désherbage et plantations',
+const services = [
+  'Aménagement extérieur',
+  'Entretien de jardin',
+  'Taille et élagage',
+]
+
+const visuals = [
+  '/ChatGPT Image 1 juin 2026, 21_41_55.png',
+  '/ChatGPT Image 1 juin 2026, 21_38_05.png',
+  '/coupe.png',
 ]
 
 export default function HomePage() {
@@ -20,85 +24,69 @@ export default function HomePage() {
     <main className="page-shell home-page-shell">
       <div className="page-bg home-page-bg" />
       <div className="page-overlay home-page-overlay" />
-      <NavHeader className="page-header" ctaLabel="Demander un devis" />
+      <NavHeader className="page-header" ctaLabel="Prendre rendez-vous" ctaTo="/contact" />
 
-      <section className="page-content home-page-content page-grid" style={{ gap: 44 }}>
+      <section className="page-content page-grid" style={{ gap: 40 }}>
         <div className="home-hero-top">
           <div className="home-hero-copy-block">
-            <p className="kicker">ENTRETIEN • ÉLAGAGE • AMÉNAGEMENT</p>
-            <h1 className="hero-title">Des extérieurs propres,<br />fiables et bien suivis,<br />toute <em>l’année.</em></h1>
+            <p className="kicker">CODEPA PAYSAGISTE</p>
+            <h1 className="hero-title">Des extérieurs beaux,<br />calmes et soignés,<br />en toute <em>simplicité.</em></h1>
             <div className="hero-line" />
             <p className="hero-copy">
-              Aubert Espace Vert accompagne particuliers et professionnels pour l’entretien,
-              la remise en état et l’aménagement de jardins soignés, pratiques et durables.
+              Un site pensé pour aller à l’essentiel : de belles réalisations,
+              peu de friction, et une prise de rendez-vous rapide.
             </p>
             <div className="cta-row home-cta-row">
-              <NavLink className="primary-btn home-hero-cta" to="/reservation">Demander un devis gratuit <span>→</span></NavLink>
-              <NavLink className="secondary-btn" to="/services">Voir nos prestations</NavLink>
+              <NavLink className="primary-btn home-hero-cta" to="/contact">Prendre rendez-vous <span>→</span></NavLink>
+              <NavLink className="secondary-btn" to="/nos-realisations">Voir les réalisations</NavLink>
             </div>
           </div>
         </div>
 
-        <div className="proof-grid">
-          {proofItems.map(([title, subtitle]) => (
-            <article className="proof-item" key={title}>
-              <strong>{title}</strong>
-              <span>{subtitle}</span>
+        <div className="proof-grid proof-grid-compact">
+          {promises.map((item) => (
+            <article className="proof-item proof-item-compact" key={item}>
+              <strong>{item}</strong>
             </article>
           ))}
         </div>
 
         <section className="page-grid two-col home-split-section">
           <article className="glass-card padded">
-            <p className="section-label">POURQUOI NOUS CHOISIR</p>
-            <h2 className="section-title">Une entreprise familiale réactive, sérieuse et claire.</h2>
+            <p className="section-label">L’ESSENTIEL</p>
+            <h2 className="section-title">Un paysagiste qui mise sur la qualité visuelle et la facilité de contact.</h2>
             <p className="muted section-copy">
-              Depuis plusieurs décennies, Aubert Espace Vert intervient avec une logique simple :
-              arriver vite, travailler proprement, proposer le juste prix et laisser un extérieur net.
+              Ici, pas de surcharge. Le site doit transmettre une impression de soin,
+              de confiance et de fluidité, avec juste ce qu’il faut pour donner envie de prendre contact.
             </p>
-            <div className="list-rows compact-list" style={{ marginTop: 16 }}>
-              {[
-                'Interventions régulières ou ponctuelles',
-                'Conseils adaptés à votre terrain',
-                'Suivi propre et respectueux des lieux',
-                'Prise de rendez-vous rapide',
-              ].map((item) => (
-                <div className="row-item compact-row" key={item}>
-                  <div className="icon-dot">✓</div>
-                  <div><span className="muted" style={{ marginTop: 0 }}>{item}</span></div>
+            <div className="page-grid" style={{ gap: 12, marginTop: 18 }}>
+              {services.map((item) => (
+                <div className="feature-strip" key={item}>
+                  <strong>{item}</strong>
                 </div>
               ))}
             </div>
           </article>
 
           <article className="glass-card padded">
-            <p className="section-label">PRESTATIONS CLÉS</p>
-            <h2 className="section-title">Les services les plus demandés.</h2>
-            <div className="page-grid" style={{ gap: 12, marginTop: 18 }}>
-              {serviceHighlights.map((item) => (
-                <div className="feature-strip" key={item}>
-                  <strong>{item}</strong>
-                </div>
-              ))}
-            </div>
-            <div className="cta-row" style={{ marginTop: 22 }}>
-              <NavLink className="secondary-btn" to="/nos-realisations">Voir nos réalisations</NavLink>
+            <p className="section-label">PRISE DE RDV</p>
+            <h2 className="section-title">Le bon réflexe doit être immédiat.</h2>
+            <p className="muted section-copy">
+              Un visiteur doit comprendre vite, ressentir la qualité, puis pouvoir appeler ou écrire sans effort.
+            </p>
+            <div className="home-final-cta-actions" style={{ marginTop: 22 }}>
+              <a className="primary-btn" href="tel:0626677270">Appeler maintenant <span>→</span></a>
+              <NavLink className="secondary-btn" to="/contact">Voir les coordonnées</NavLink>
             </div>
           </article>
         </section>
 
-        <section className="glass-card padded page-grid two-col home-final-cta">
-          <div>
-            <p className="section-label">DEVIS GRATUIT</p>
-            <h2 className="section-title">Un besoin d’entretien, de taille ou d’élagage ?</h2>
-            <p className="muted section-copy">
-              Expliquez votre besoin en quelques lignes. Nous revenons rapidement vers vous avec une proposition claire.
-            </p>
-          </div>
-          <div className="home-final-cta-actions">
-            <a className="primary-btn" href="tel:0626677270">Appeler maintenant <span>→</span></a>
-            <NavLink className="secondary-btn" to="/contact">Voir les coordonnées</NavLink>
-          </div>
+        <section className="page-grid three-col">
+          {visuals.map((image, index) => (
+            <article className="glass-card padded" key={image}>
+              <img src={image} alt={`Ambiance extérieure ${index + 1}`} className="service-image big-image-real" />
+            </article>
+          ))}
         </section>
       </section>
     </main>
