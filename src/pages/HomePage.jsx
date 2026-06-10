@@ -4,32 +4,32 @@ import NavHeader from '../components/NavHeader'
 const projects = [
   {
     title: 'Jardins soignés',
-    image: '/ChatGPT Image 1 juin 2026, 21_41_55.png',
+    image: '/1.1.png',
     text: 'Des extérieurs propres, équilibrés et visuellement apaisants.',
   },
   {
     title: 'Taille et structure',
-    image: '/coupe.png',
+    image: '/2.2.png',
     text: 'Des lignes nettes pour redonner de la tenue et de l’élégance au jardin.',
   },
   {
     title: 'Entretien régulier',
-    image: '/ChatGPT Image 1 juin 2026, 21_38_05.png',
+    image: '/3.3.png',
     text: 'Un suivi simple et sérieux pour garder un extérieur toujours présentable.',
   },
   {
     title: 'Interventions maîtrisées',
-    image: '/arbre couper.png',
+    image: '/4.4.png',
     text: 'Des travaux réalisés avec soin pour sécuriser et remettre en valeur les espaces.',
   },
   {
     title: 'Ambiance naturelle',
-    image: '/entretien jardin.png',
+    image: '/5.5.png',
     text: 'Une approche visuelle qui met l’émotion et la propreté au premier plan.',
   },
   {
     title: 'Finitions propres',
-    image: '/taille de haies.png',
+    image: '/6.6.png',
     text: 'Le détail compte : un rendu net, lisible et rassurant.',
   },
 ]
