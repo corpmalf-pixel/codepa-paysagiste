@@ -2,36 +2,12 @@ import { NavLink } from 'react-router-dom'
 import NavHeader from '../components/NavHeader'
 
 const projects = [
-  {
-    title: 'Jardins soignés',
-    image: '/1.1.png',
-    text: 'Des extérieurs propres, équilibrés et visuellement apaisants.',
-  },
-  {
-    title: 'Taille et structure',
-    image: '/2.2.png',
-    text: 'Des lignes nettes pour redonner de la tenue et de l’élégance au jardin.',
-  },
-  {
-    title: 'Entretien régulier',
-    image: '/3.3.png',
-    text: 'Un suivi simple et sérieux pour garder un extérieur toujours présentable.',
-  },
-  {
-    title: 'Interventions maîtrisées',
-    image: '/4.4.png',
-    text: 'Des travaux réalisés avec soin pour sécuriser et remettre en valeur les espaces.',
-  },
-  {
-    title: 'Ambiance naturelle',
-    image: '/5.5.png',
-    text: 'Une approche visuelle qui met l’émotion et la propreté au premier plan.',
-  },
-  {
-    title: 'Finitions propres',
-    image: '/6.6.png',
-    text: 'Le détail compte : un rendu net, lisible et rassurant.',
-  },
+  '/1.1.png',
+  '/2.2.png',
+  '/3.3.png',
+  '/4.4.png',
+  '/5.5.png',
+  '/6.6.png',
 ]
 
 const infos = [
@@ -88,11 +64,9 @@ export default function HomePage() {
           </div>
 
           <div className="page-grid three-col reveal-grid">
-            {projects.map((project) => (
-              <article className="glass-card padded reveal-card" key={project.title}>
-                <img src={project.image} alt={project.title} className="service-image big-image-real" />
-                <h3>{project.title}</h3>
-                <p className="muted">{project.text}</p>
+            {projects.map((image, index) => (
+              <article className="glass-card padded reveal-card reveal-image-card" key={image}>
+                <img src={image} alt={`Réalisation ${index + 1}`} className="service-image big-image-real" />
               </article>
             ))}
           </div>
