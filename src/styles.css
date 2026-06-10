@@ -66,6 +66,22 @@ img, svg, canvas { max-width: 100%; display: block; }
     linear-gradient(180deg, rgba(3, 8, 5, 0.08) 0%, rgba(3, 8, 5, 0.22) 100%);
 }
 
+.contact-page-bg {
+  background:
+    linear-gradient(90deg, rgba(3, 8, 5, 0.88) 0%, rgba(3, 8, 5, 0.74) 28%, rgba(3, 8, 5, 0.34) 58%, rgba(3, 8, 5, 0.12) 100%),
+    linear-gradient(180deg, rgba(4, 8, 6, 0.48) 0%, rgba(4, 8, 6, 0.16) 44%, rgba(4, 8, 6, 0.56) 100%),
+    url('/page 2.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.contact-page-overlay {
+  background:
+    radial-gradient(circle at 76% 20%, rgba(255, 219, 120, 0.12), transparent 16%),
+    linear-gradient(180deg, rgba(3, 8, 5, 0.08) 0%, rgba(3, 8, 5, 0.20) 100%);
+}
+
 .about-page-bg {
   background:
     linear-gradient(90deg, rgba(3, 8, 5, 0.84) 0%, rgba(3, 8, 5, 0.72) 30%, rgba(3, 8, 5, 0.32) 58%, rgba(3, 8, 5, 0.14) 100%),

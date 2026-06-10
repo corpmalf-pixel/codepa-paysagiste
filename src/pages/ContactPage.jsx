@@ -14,9 +14,9 @@ const proofs = [
 
 export default function ContactPage() {
   return (
-    <main className="page-shell">
-      <div className="page-bg" />
-      <div className="page-overlay" />
+    <main className="page-shell contact-page-shell">
+      <div className="page-bg contact-page-bg" />
+      <div className="page-overlay contact-page-overlay" />
       <NavHeader className="page-header" ctaLabel="Prendre rendez-vous" ctaTo="/contact" />
 
       <section className="page-content page-grid two-col">
