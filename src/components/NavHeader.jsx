@@ -10,11 +10,7 @@ const items = [
 export default function NavHeader({ className = '', ctaLabel = 'Prendre rendez-vous', ctaTo = '/contact', showLogo = true }) {
   return (
     <header className={className}>
-      {showLogo ? (
-        <div className="logo-block">
-          <img src={logoAubert} alt="Codepa Paysagiste" className="site-logo" />
-        </div>
-      ) : <div />}
+      <div />
 
       <div className="nav-shell">
         <nav className="site-nav">

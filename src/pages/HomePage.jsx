@@ -62,14 +62,13 @@ export default function HomePage() {
               <div className="hero-line" />
               <div className="cta-row home-cta-row">
                 <a className="primary-btn home-hero-cta" href="#realisations">Découvrir les réalisations <span>→</span></a>
-                <a className="secondary-btn" href="#contact-panel">Prendre rendez-vous</a>
+                <a className="secondary-btn" href="#contact-panel">Transformer mon extérieur</a>
               </div>
             </div>
           </div>
 
           <div className="scroll-cue-wrap">
             <a href="#realisations" className="scroll-cue">
-              <span className="scroll-cue-label">Scroller</span>
               <span className="scroll-cue-line" />
             </a>
           </div>
