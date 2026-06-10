@@ -34,13 +34,25 @@ const projects = [
   },
 ]
 
+const infos = [
+  ['Téléphone', '06 26 67 72 70'],
+  ['Email', 'contact@codepa-paysagiste.fr'],
+  ['Zone d’intervention', 'À préciser'],
+]
+
+const proofs = [
+  'Prise de rendez-vous rapide',
+  'Réponse simple',
+  'Contact direct',
+]
+
 export default function HomePage() {
   return (
     <main className="scroll-story-shell">
       <section className="page-shell home-page-shell scroll-panel hero-panel">
         <div className="page-bg home-page-bg" />
         <div className="page-overlay home-page-overlay" />
-        <NavHeader className="page-header" ctaLabel="Prendre rendez-vous" ctaTo="/contact" />
+        <NavHeader className="page-header" ctaLabel="Prendre rendez-vous" ctaTo="#contact-panel" />
 
         <section className="page-content page-grid hero-panel-content" style={{ gap: 40 }}>
           <div className="home-hero-top">
@@ -50,7 +62,7 @@ export default function HomePage() {
               <div className="hero-line" />
               <div className="cta-row home-cta-row">
                 <a className="primary-btn home-hero-cta" href="#realisations">Découvrir les réalisations <span>→</span></a>
-                <NavLink className="secondary-btn" to="/contact">Prendre rendez-vous</NavLink>
+                <a className="secondary-btn" href="#contact-panel">Prendre rendez-vous</a>
               </div>
             </div>
           </div>
@@ -73,10 +85,6 @@ export default function HomePage() {
             <p className="kicker">RÉALISATIONS</p>
             <h2 className="hero-title reveal-title">Des images pour ressentir<br />la qualité avant même de <em>lire.</em></h2>
             <div className="hero-line" />
-            <p className="hero-copy">
-              Une transition pensée pour donner l’impression que l’univers visuel apparaît du centre,
-              puis prend toute la place.
-            </p>
           </div>
 
           <div className="page-grid three-col reveal-grid">
@@ -87,6 +95,54 @@ export default function HomePage() {
                 <p className="muted">{project.text}</p>
               </article>
             ))}
+          </div>
+
+          <div className="scroll-cue-wrap scroll-cue-wrap-bottom">
+            <a href="#contact-panel" className="scroll-cue">
+              <span className="scroll-cue-label">Continuer</span>
+              <span className="scroll-cue-line" />
+            </a>
+          </div>
+        </section>
+      </section>
+
+      <section id="contact-panel" className="page-shell contact-page-shell reveal-panel contact-reveal-panel">
+        <div className="page-bg contact-page-bg" />
+        <div className="page-overlay contact-page-overlay" />
+
+        <section className="page-content page-grid two-col reveal-panel-content" style={{ gap: 32 }}>
+          <div className="reveal-panel-intro">
+            <p className="kicker">CONTACT</p>
+            <h2 className="hero-title reveal-title">Prendre contact<br />doit être simple et <em>immédiat.</em></h2>
+            <div className="hero-line" />
+            <div className="list-rows" style={{ marginTop: 28 }}>
+              {infos.map(([label, value]) => (
+                <div className="row-item" key={label}>
+                  <div className="icon-dot">◌</div>
+                  <div>
+                    <strong>{label}</strong>
+                    <span className="muted">{value}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="home-final-cta-actions" style={{ marginTop: 28 }}>
+              <a className="primary-btn" href="tel:0626677270">Appeler maintenant <span>→</span></a>
+              <a className="secondary-btn" href="mailto:contact@codepa-paysagiste.fr">Envoyer un email</a>
+            </div>
+          </div>
+
+          <div className="page-grid reveal-grid">
+            <div className="glass-card padded">
+              <div className="proof-grid proof-grid-compact">
+                {proofs.map((item) => (
+                  <article className="proof-item proof-item-compact" key={item}>
+                    <strong>{item}</strong>
+                  </article>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
       </section>
