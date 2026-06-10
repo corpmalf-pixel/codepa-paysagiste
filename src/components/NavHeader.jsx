@@ -3,10 +3,8 @@ import logoAubert from '../assets/logo-aubert.svg'
 
 const items = [
   ['Accueil', '/accueil'],
-  ['À propos', '/a-propos'],
   ['Services', '/services'],
   ['Nos réalisations', '/nos-realisations'],
-  ['Horaires', '/horaires'],
   ['Contact', '/contact'],
 ]
 
