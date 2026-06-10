@@ -48,10 +48,6 @@ export default function HomePage() {
               <p className="kicker">CODEPA PAYSAGISTE</p>
               <h1 className="hero-title">Des extérieurs beaux,<br />calmes et soignés,<br />en toute <em>simplicité.</em></h1>
               <div className="hero-line" />
-              <p className="hero-copy">
-                Un site pensé pour aller à l’essentiel : de belles réalisations,
-                peu de friction, et une prise de rendez-vous rapide.
-              </p>
               <div className="cta-row home-cta-row">
                 <a className="primary-btn home-hero-cta" href="#realisations">Découvrir les réalisations <span>→</span></a>
                 <NavLink className="secondary-btn" to="/contact">Prendre rendez-vous</NavLink>
