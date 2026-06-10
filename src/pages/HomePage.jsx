@@ -58,7 +58,7 @@ export default function HomePage() {
           <div className="home-hero-top">
             <div className="home-hero-copy-block">
               <p className="kicker">CODEPA PAYSAGISTE</p>
-              <h1 className="hero-title">Des extérieurs beaux,<br />calmes et soignés,<br />en toute <em>simplicité.</em></h1>
+              <h1 className="hero-title">L'art de vivre<br />commence dans votre <em>jardin.</em></h1>
               <div className="hero-line" />
               <div className="cta-row home-cta-row">
                 <a className="primary-btn home-hero-cta" href="#realisations">Découvrir les réalisations <span>→</span></a>
