@@ -1,5 +1,4 @@
 import { NavLink } from 'react-router-dom'
-import logoAubert from '../assets/logo-aubert.svg'
 
 const items = [
   ['Accueil', '/accueil'],
@@ -7,24 +6,22 @@ const items = [
   ['Contact', '/contact'],
 ]
 
-export default function NavHeader({ className = '', ctaLabel = 'Prendre rendez-vous', ctaTo = '/contact', showLogo = true }) {
+export default function NavHeader({ className = '', ctaLabel = 'Prendre rendez-vous', ctaTo = '/contact' }) {
   return (
     <header className={className}>
       <div />
 
-      <div className="nav-shell">
-        <nav className="site-nav">
-          {items.map(([label, to]) => (
-            <NavLink
-              key={to}
-              to={to}
-              className={({ isActive }) => (isActive ? 'active' : '')}
-            >
-              {label}
-            </NavLink>
-          ))}
-        </nav>
-      </div>
+      <nav className="site-nav site-nav-pills">
+        {items.map(([label, to]) => (
+          <NavLink
+            key={to}
+            to={to}
+            className={({ isActive }) => `nav-pill${isActive ? ' active' : ''}`}
+          >
+            {label}
+          </NavLink>
+        ))}
+      </nav>
 
       {ctaLabel ? <NavLink to={ctaTo} className="top-cta">{ctaLabel} <span>→</span></NavLink> : <div />}
     </header>
