@@ -30,8 +30,9 @@ body {
 }
 
 .hero-panel-content {
-  min-height: calc(100vh - 80px);
-  align-content: end;
+  min-height: 100vh;
+  align-content: space-between;
+  padding-bottom: 28px;
 }
 
 .scroll-cue-wrap {
@@ -64,7 +65,7 @@ body {
 .reveal-panel {
   position: relative;
   min-height: 100vh;
-  margin-top: -10vh;
+  margin-top: 0;
   z-index: 3;
 }
 
