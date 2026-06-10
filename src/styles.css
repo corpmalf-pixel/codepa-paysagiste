@@ -31,8 +31,9 @@ body {
 
 .hero-panel-content {
   min-height: 100vh;
-  align-content: space-between;
-  padding-bottom: 28px;
+  align-content: end;
+  padding-top: 120px;
+  padding-bottom: 36px;
 }
 
 .scroll-cue-wrap {
