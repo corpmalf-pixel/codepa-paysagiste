@@ -32,8 +32,15 @@ body {
 .hero-panel-content {
   min-height: 100vh;
   align-content: end;
-  padding-top: 120px;
+  padding-top: 84px;
   padding-bottom: 36px;
+}
+
+.hero-corner-kicker {
+  position: absolute;
+  top: 96px;
+  left: 40px;
+  z-index: 3;
 }
 
 .scroll-cue-wrap {
@@ -231,10 +238,10 @@ img, svg, canvas { max-width: 100%; display: block; }
 
 .page-header {
   display: grid;
-  grid-template-columns: 220px minmax(680px, 760px) auto;
+  grid-template-columns: 1px minmax(320px, 460px) auto;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: end;
+  gap: 14px;
   padding: 0;
   margin: 0 40px 0;
 }
@@ -275,8 +282,8 @@ img, svg, canvas { max-width: 100%; display: block; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  padding: 12px 20px;
+  width: auto;
+  padding: 12px 16px;
   border-radius: 12px;
   border: 1px solid rgba(255,255,255,0.08);
   background: linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
@@ -330,9 +337,9 @@ img, svg, canvas { max-width: 100%; display: block; }
 
 .site-nav {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  font-size: 0.96rem;
+  justify-content: center;
+  gap: 14px;
+  font-size: 0.92rem;
   flex-wrap: nowrap;
 }
 

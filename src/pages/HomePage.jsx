@@ -55,9 +55,10 @@ export default function HomePage() {
         <NavHeader className="page-header" ctaLabel="Prendre rendez-vous" ctaTo="#contact-panel" />
 
         <section className="page-content page-grid hero-panel-content" style={{ gap: 40 }}>
+          <p className="kicker hero-corner-kicker">CODEPA PAYSAGISTE</p>
+
           <div className="home-hero-top">
             <div className="home-hero-copy-block">
-              <p className="kicker">CODEPA PAYSAGISTE</p>
               <h1 className="hero-title">L'art de vivre<br />commence dans votre <em>jardin.</em></h1>
               <div className="hero-line" />
               <div className="cta-row home-cta-row">
